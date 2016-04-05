@@ -8,12 +8,12 @@ gem 'jquery-rails', '4.0.3'
 gem 'turbolinks',   '2.3.0'
 gem 'jbuilder',     '2.2.3'
 gem 'sdoc',         '0.4.0', group: :doc
-  gem 'mysql2'
 
 group :development, :test do
   gem 'byebug',      '3.4.0'
   gem 'web-console', '2.0.0.beta3'
   gem 'spring',      '1.1.3'
+  gem 'mysql2', '~> 0.3.18'
 end
 
 group :test do
