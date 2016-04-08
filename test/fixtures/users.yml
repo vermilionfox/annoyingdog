@@ -9,3 +9,11 @@ annoyingdoge:
   name: Annoying Doge
   email: annoying@gode.com
   password_digest: <%= User.digest('barkbark') %>
+
+  
+<% 30.times do |n| %>
+user_<%= n %>:
+  name:  <%= "User #{n}" %>
+  email: <%= "user-#{n}@example.com" %>
+  password_digest: <%= User.digest('password') %>
+<% end %>
