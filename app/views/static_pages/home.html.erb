@@ -2,9 +2,10 @@
   <h1>Welcome</h1>
 
   <p>On this useful website you can bark and woof with annoying dogs.</p>
-
+  <% if !logged_in? %>
   <%= link_to "Let's Bark!", signup_path, class: "btn btn-lg btn-primary" %><br >
   <%= image_tag("dog.gif", alt: "bark") %>
+  <% end %>
 
 </div>
 
