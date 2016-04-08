@@ -12,8 +12,8 @@
       <%= f.password_field :password, class: 'form-control' %>
 
       <%= f.label :remember_me, class: "checkbox inline" do %>
-        <%= f.check_box :remember_me %>
-        <span>Remember me :3</span>
+        <%= f.check_box :remember_me, {checked: true} %>
+        <span>Remember me</span>
       <% end %>  
 
       <%= f.submit "Woof!", class: "btn btn-primary" %>
